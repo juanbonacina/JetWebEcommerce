@@ -1,0 +1,807 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 15pt;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color:#4286d2;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-top: 25px;
+    .menuPrinci{
+        display: flex;
+        width: 33.3%;
+        padding-left: 20px;
+        img{
+            width: 5%;
+        }
+    }
+        
+    a{
+        width: 10%;
+        img{
+            width: 100%;
+        }
+    }
+    
+    nav{
+        width: 33.3%;
+        ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            a{
+                display: flex;
+                width: 33.3%; 
+                li{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 15%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.divLogos{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: fit-content;
+    padding: 20px;
+    background-color: #92c5fc;
+    div{
+        width:20%;
+        display: flex;
+        justify-content:space-around;
+        a{
+            img{
+                width: 28%;
+            }
+        }
+    }
+}
+main{
+    background-color: rgb(241, 242, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;    
+    article{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 50%;
+        font-size: 18pt;
+        h2{
+            margin-bottom: 40px;
+        }
+    }
+    .divArtVen{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        div{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 15%;
+                padding: 20px;
+                justify-content: center;
+                margin: 30px;
+                background-color: white;
+                border-radius: 25px;
+                align-items:center ;
+                text-align: center;
+                
+                img{
+                    width: 50%;
+                }
+                .divSelec{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    border: none  ;
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+
+    .divBanner{
+        height: fit-content;
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+             
+        }
+    }
+}
+footer{
+    background-color:#4286d2;
+    padding: 50px;
+    text-align: center;
+    div{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li{
+                width: 33.3%;
+                /*border: 2px solid black;*/
+                div{
+                    list-style: none;
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center ;
+                        /*border: 2px solid orangered;*/
+                        li{
+                            margin: 15px;
+                            width: 50%;
+                            /*border: 2px solid gainsboro;8*/
+                            iframe{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .DivRedes{
+                    /*border: 2px solid orange;*/
+                    ul{
+                        display: flex;
+                        /*border: 2px solid yellow;*/
+                        flex-direction: row;
+                        justify-content: start;
+                        a{
+                            width: 50%;
+                            display: flex;
+                            justify-content: center;
+                            li{
+                                display: flex;
+                                flex-direction: row;
+                                /*border:  2px solid green;*/
+                                width: 50%;
+                                justify-content: center;
+                                img{
+                                    width: 30%;
+                                    /*border: 2px solid red;*/
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+/*-------------------------carrito-------------------------*/
+
+.headerCarrito{
+    nav{
+        width: 100%;
+        /*border: 2px solid greenyellow;*/
+        ul{
+            /*border: 2px solid red;*/
+            display: flex;
+            justify-content: space-around;
+
+            a{
+                display: flex;
+                align-items: center;
+                /*border: 2px solid yellow;*/
+                width: 25%;
+                img{
+                    width: 8%;
+                    height: min-content;
+                }
+            }
+            .LOGO{
+                width: 33.3%;
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+.CuerpoCarrito{
+    /*border: 2px solid black;*/
+    width: 80%;
+    margin-bottom: 40px;
+    ul{
+        /*border: 2px solid red;*/
+        list-style: none;
+        li{
+            /*border: 2px solid yellow;*/
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                /*border: 2px solid green;*/
+                width: 90%;
+                img{
+                    /*border: 2px solid yellow;*/
+                    width: 1%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+.totalCarrito{
+    /*border: 2px solid yellow;*/
+    margin-top: 40px;
+    height: 15vh;
+    width: 80%;
+    div{
+        /*border: 2px solid red;*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        button{
+            display: flex;
+            height: 55%;
+            width: 8%;
+            border: none;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 0px 0px 5px gray; 
+            align-items: center;
+            justify-content: center;
+  
+        }
+    }
+} 
+
+/*-------------------------------fin carrito--------------*/
+
+/*------------------------------Perfil Admin -----------*/
+.mainAdmin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70vh;
+    div{
+        /*border: 2px solid red;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 250px;
+        margin: 15px;
+        background-color: aliceblue;
+        border-radius: 15px;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                /*border: 2px solid blue;*/
+                width: 20%;
+            }
+        }
+
+    }
+}
+.footerAdmin{
+    height: 1vh;
+}
+
+
+/*----------------------------------Ventas----------------*/
+
+.mainVentAdmin{
+    div{
+        display: flex;
+        justify-content: center;
+        /*border: 2px solid salmon;*/
+        width: 80%;
+        ul{
+            list-style: none;
+            /*border: 2px solid black;*/
+            width: 100%;
+            li{                
+                border-bottom: 2px solid #4286d2;
+                a{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 15px;
+                    /*border: 2px solid black;*/
+    
+                }
+            }
+
+        }
+        
+ 
+    }
+    .VentasVolver{
+        a{
+            display: flex;
+            justify-content: center;
+            /*border: solid 2px red;*/
+            img{
+                margin-top: 40px;
+                width: 10%;
+            }
+
+        }
+    }
+}
+
+
+/*-------------------------------- pagina producto // estilo para JS  ----------------------------------------*/
+.navBarCategorias{
+    background-color: rgb(241, 242, 243);
+    padding-top: 40px;
+    p{
+        padding-left: 30px;
+    }
+}
+.mainProductos{
+    display: flex;
+    flex-direction: row;
+    /*border: 2px solid black;*/
+    padding: 0%;
+    padding-left: 20px;
+    div{
+        display: flex;
+        justify-content: center;
+        .ArtExpuesto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /*border: 2px solid salmon;*/
+            width: 90%;
+            .producto {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 18%;
+                /*border: 2px solid black;*/
+                align-items: center;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center ;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 90%;
+                    margin: 10px 0;
+                    border-radius: 15px;
+                    padding: 10px;
+                    box-shadow: 2px 2px 12px rgba(0,0,0,0.1); 
+                    background-color: white;
+                    /*border: 2px solid brown;*/
+                    h3{
+                        font-size: 22px;
+                    }
+                    img{
+                        width: 50%;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        img{
+                            width: 10%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    
+    aside{
+        font-size: 20px;
+        width: 100%;
+        height: 100vh;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.1); 
+        border-radius: 15px;
+        /*border: 2px solid black;*/
+        ul{
+            list-style: none;
+            width: 100%;
+            /*border: 2px solid blue;*/
+            li{
+                /*border: 2px solid skyblue;*/
+                margin: 20px;
+                p{
+                    /*border: 2px solid black;*/
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+.popup {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .popup-content {
+        display: flex;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        /*border: 2px solid black;*/
+        text-align: center;
+        div{
+            display: flex;
+            /*border: 2px solid salmon;*/
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            img{
+                width: 15%;
+            }
+        }
+        .contador{
+            /*border: 2px solid red;*/
+            div{
+                /*border: 2px solid blue;*/
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                div{
+                   /* border: 2px solid brown;*/
+                    display: flex;
+                    flex-direction: row;
+                    button{
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 2px 2px 12px rgba(0,0,0,0.3); 
+                        background-color: #92c5fc;
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .close {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+
+/*innerados por rutas*/
+
+.mainProductosexpuestos{
+    display: flex;
+    /*border: 2px solid black;*/
+    padding: 0%;
+    padding-left: 20px;
+
+            #contenedor-productos{
+                display: flex;
+                flex-wrap: wrap;
+                /*border: 2px ridge rgb(112, 216, 121) ;*/
+                margin: 30px;
+                width: 100%;
+                justify-content: center;
+                .expoProducto {
+                    margin: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    align-items: center;
+                    /*border: 2px solid violet;*/
+                    a{  
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:center ;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 90%;
+                        margin: 10px 0;
+                        border-radius: 15px;
+                        padding: 10px;
+                        box-shadow: 2px 2px 12px rgba(0,0,0,0.1); 
+                        background-color: white;
+                        /*border: 2px solid black;*/
+                        img{
+                            width: 20%;
+                        }
+                        p{
+                            font-size: 18px;
+                        } 
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        background-color: white;
+                        border-radius: 15px;
+                        /*border: 2px solid black;*/
+                        width: 90%;
+                        box-shadow: 2px 2px 12px rgba(0,0,0,0.1); 
+                        img{
+                            width: 10%;
+                            padding: 10px;
+                        }
+                    }
+                    
+                }
+            }
+
+
+}
+// producto unico seleccionado innerado por ruta
+.main_producto_selec{
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /*border: 2px solid orange;*/
+    height: 80vh;
+    #producto_seleccionado{
+        /*border:2px solid brown;*/
+        .producto_detalle{
+           /* border: 2px solid black;*/
+            display: flex;
+            .detalle_img{
+                /*border: 2px solid palevioletred;*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50%;
+                }
+            }
+            .detalle_cuerpo{
+               /* border: 2px solid yellow;*/
+                .detalle_Desc{
+                    /*border: 2px solid green;*/
+                    text-align: center;
+                    h3{
+                        font-size: 22px;
+                    }
+                }
+                .detalle_vent{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    /*border: 2px solid lightskyblue;*/
+                    .contador{
+                        /*border: 2px solid black;*/
+                        width: 100%;
+                        margin-bottom: 20px;                        
+                        div{
+                            border: 2px solid #92c5fc;
+                            border-radius: 15px;
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            box-shadow: 2px 2px 12px #4286d2;
+                            
+                            div{
+                                width: 100%;
+                                border: 0px solid red;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                box-shadow: 0px 0px 0px;
+                                button{
+                                    width: 20%;
+                                    border-radius: 15px;
+                                    border: 0px;
+                                    background: #92c5fc;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+                    div{
+                        display: flex;
+                        justify-content: space-around;
+                       /* border:2px solid red;*/
+                        img{
+                            width: 5%;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+
+// estilo carrito
+
+#borrarCarrito{
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.5); 
+    width: 10%;
+    margin-bottom: 30px;
+}
+
+.mainCarrito{
+    /*border: 2px solid black;*/
+    .CuerpoCarrito{
+       /* border: 2px solid red;*/
+        width: 90%;
+        .elementosCarrito{
+            /*border: 2px solid violet;*/
+            .moduloProducto{
+               /* border: 2px solid brown;*/
+               .productoCarrito{
+                    /*border: 2px solid palegreen; */                   
+                    /*border: 2px solid pink;*/
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: white;
+                    border-radius: 15px;
+                    margin: 5px;
+                    img{
+                        width: 20%;
+                    }
+                    div{
+                        /* border: 2px solid greenyellow;*/
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        div{
+                        /*border: 2px solid yellow;*/
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items:center ;
+                            flex-direction: column;
+                        }
+                    }
+                    
+                    .divX{
+                        border: 2px solid #92c5fc;
+                        border-radius: 15px;
+                        width: 20%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 80%;
+                        img{
+                            width: 10%;
+                            margin-right: 1px;
+                        }
+                        div{
+                            /*border: 2px solid black;*/
+                            div{
+                                /*border: 2px solid aqua;*/
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                p{
+                                    margin: 0px;
+                                }
+                                button{
+                                    border: 0px;
+                                    background-color: white;
+                                    color: #4286d2;
+                                }
+                            }
+                        }
+
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+
+
+
+.popupCarrito {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /*border: #92c5fc 2px solid;*/
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        /*border: 2px solid black;*/
+        text-align: center;
+        border-radius: 15px;
+        
+        div{
+            display: flex;
+            /*border: 2px solid salmon;*/
+            
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            .listaCarrito{
+                /*border: 2px solid #4286d2;*/
+                list-style: none;
+                li{
+                    /*border: 2px solid brown;*/
+                    border-bottom: #92c5fc 2px solid;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    img{
+                        width: 15%;
+                    }
+                }
+            }
+
+        }
+    }
+    
+    .close {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

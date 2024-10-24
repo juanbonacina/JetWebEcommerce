@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="headerCarrito">
+        <nav>
+            <ul>
+                <a href="/">
+                    <li>
+                        <img src="IMG/flecha.png" alt="volver">
+                    </li>
+                </a>
+                <a href="/" class="LOGO">
+                    <li>
+                        <img src="IMG/JetLogo.png" alt="logo">
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <img src="IMG/informacion.png" alt="info">
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainCarrito">
+        <div class="CuerpoCarrito">
+
+          <div class="elementosCarrito">
+            <button id="borrarCarrito">Borrar Carrito</button>
+          <!--cuerpo donde se alojaran los prodcutos-->
+          
+          </div>
+
+            <!-- Modal -->
+            <div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="exampleModalLabel">Informacion de Envio</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Nombre</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Apellido</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Numero de Telefono</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Direccion</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Av. Libertador 2345">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Entre Calles</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Entre ... y ...">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">Ciudad</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">Localidad</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Codigo Postal</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+
+                                  <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Seleccione Horario de Entrega</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>07:00 - 09:00</option>
+                                      <option>09:00 - 11:00</option>
+                                      <option>11:00 - 13:00</option>
+                                      <option>13:00 - 16:00</option>
+                                    </select>
+                                  </div>
+
+
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check Para confirmar la informacion
+                                    </label>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="exampleModalLabel">Informacion de Pago</h2>
+                        </div>
+
+                        <div class="modal-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Nombre del Titular</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Numero de Tarjeta</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">CVV</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Mes de Vencimiento</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>09</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Año de Vencimiento</label>
+                                    <select id="inputState" class="form-select">
+                                      <option selected>24</option>
+                                      <option>25</option>
+                                      <option>26</option>
+                                      <option>27</option>
+                                    </select>
+                                </div>
+
+
+                        </div>
+
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirmar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIN DEL MODAL-->
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <div>
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li>+54 11 4545-8965</li>
+                            <li>contacto@jetlimpieza.com</li>
+                        </ul>
+                    </div>
+                </li>
+                <li> 
+                    <div class="DivRedes">
+                        <h3>Redes</h3>
+                        <ul>
+                            <a href=""><li><img src="IMG/logotipo-de-instagram.png" alt="IG"></li></a>
+                            <a href=""><li><img src="IMG/logotipo-de-linkedin.png" alt="Linkedin"></li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Ubicacion</h3>
+                        <ul>
+                            <li>Dr. Tomás Manuel de Anchorena 978, CABA</li>
+                            <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.274539486431!2d-58.410383023417936!3d-34.59721865715649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb74323904ef%3A0x77607e7d9c8a28f7!2sJet%20-%20Art%C3%ADculos%20de%20Limpieza!5e0!3m2!1ses-419!2sar!4v1723487453080!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+                  
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="/functions/functions.js"></script>
+</html>

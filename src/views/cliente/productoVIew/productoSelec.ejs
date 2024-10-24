@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header> 
+        <div class="menuPrinci">
+              
+          <img src="/img/menu.png" alt="menuPrinci" class="menuTiras" data-bs-toggle="offcanvas" href="#offcanvasExample">
+  
+              <!-- inicio menu offcanvas-->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">JET menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="menuCategorias">
+                      <!--menu categorias ------------------------------------------------------------------------------>
+                      <!--innerHTML mediantew JS en functions-->
+              </div>
+  
+                    <!--inicio boton revision si dejarlo o eliminarlo-->
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <a href="/"><img src="/img/JetLogo.png" alt="logo"></a>
+        <nav>
+          <ul>
+            <a href="perfilAdmin.html"><li><img src="/img/vaso.png" alt="lupa"></li></a>
+            <a href=""><li><img src="/img/me-gusta.png" alt="promos"></li></a>
+            <a id="carrito" href="/carrito"><li><img src="/img/carrito-de-compras.png" alt="carrito"></li></a>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="divLogos">
+        <div>
+            <a href=""><img src="/img/descuento.png" alt=""></a>
+            <a href="#ubi"><img src="/img/ubicacion.png" alt=""></a>
+            <a href=""><img src="/img/informacion.png" alt=""></a>
+        </div>
+    </div>
+    <!--
+    codigo del producto
+    -->
+    <main class="main_producto_selec">
+        <div id="producto_seleccionado">
+            <% if (producto) { %>
+                <div class="producto_detalle">
+                    <div class="detalle_img">
+                        <img src="/<%= producto.img %>">
+                    </div>
+                    <div class="detalle_cuerpo">
+                        <div class="detalle_Desc">
+                            <h3><%= producto.nombre %></h3>
+                            <p><%= producto.descripcion %></p>
+                            <p>precio por unidad: $<%= producto.precio %></p>
+                        </div>
+                        <div class="detalle_vent">
+                            <div id="contador" class="contador">
+                                <!-- llamsar a la function contadorProductos() innerar el contador dentro de la function y pasar como parametro el producto para parsear el json y manejar los datos-->
+
+                                <div>
+                                    <p>Unidades:<p id="cantProducto" class="cantProducto">0</p></p>
+                                    <div>
+                                        <button id="btnResta" >-</button>
+                                        <button id="btnSuma">+</button>
+                                    </div>
+                                    <p> precio total:<p id="totalPrecioProducto">$0</p></p>
+                                </div>
+                               
+                            </div>
+                            <div>
+                                <img src="/img/me-gusta.png" class="meGusta"/>
+                                <img id="btnAgregar" src="/img/carrito-de-compras.png" />
+                              </div>
+                        </div>
+                    </div>
+                 
+                  
+                </div>
+            <% } else { %>
+              <p>Producto no encontrado.</p>
+            <% } %>
+        </div>
+    </main>
+    
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <div>
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li>+54 11 4545-8965</li>
+                            <li>contacto@jetlimpieza.com</li>
+                        </ul>
+                    </div>
+                </li>
+                <li> 
+                    <div class="DivRedes">
+                        <h3>Redes</h3>
+                        <ul>
+                            <a href=""><li><img src="/img/logotipo-de-instagram.png" alt="IG"></li></a>
+                            <a href=""><li><img src="/img/logotipo-de-linkedin.png" alt="Linkedin"></li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="ubi">
+                        <h3>Ubicacion</h3>
+                        <ul>
+                            <li>Dr. Tomás Manuel de Anchorena 978, CABA</li>
+                            <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.274539486431!2d-58.410383023417936!3d-34.59721865715649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb74323904ef%3A0x77607e7d9c8a28f7!2sJet%20-%20Art%C3%ADculos%20de%20Limpieza!5e0!3m2!1ses-419!2sar!4v1723487453080!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        let productoID = '<%= producto.id %>'
+        contadorProductos(productoID)
+    })
+</script>
+<script src="/functions/functions.js"></script>
+</html>

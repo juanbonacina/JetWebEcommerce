@@ -1,0 +1,19 @@
+{
+     "productos":[
+    {"id": 1, "nombre": "nombreProducto", "precio": 5000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 2, "nombre": "nombreProducto", "precio": 6000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 3, "nombre": "nombreProducto", "precio": 4000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 4, "nombre": "nombreProducto", "precio": 5000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 5, "nombre": "nombreProducto", "precio": 8000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 6, "nombre": "nombreProducto", "precio": 9000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 7, "nombre": "nombreProducto", "precio": 500, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 8, "nombre": "nombreProducto", "precio": 4000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 9, "nombre": "nombreProducto", "precio": 400, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 10, "nombre": "nombreProducto", "precio": 800, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 11, "nombre": "nombreProducto", "precio": 5000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 12, "nombre": "nombreProducto", "precio": 9000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 13, "nombre": "nombreProducto", "precio": 6000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 14, "nombre": "nombreProducto", "precio": 100, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 15, "nombre": "nombreProducto", "precio": 1000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"},
+    {"id": 16, "nombre": "nombreProducto", "precio": 5000, "img":"img/ASPjbIMG.jpg", "descripcion":"Descripcion de producto", "categoria":"x"}]
+}
